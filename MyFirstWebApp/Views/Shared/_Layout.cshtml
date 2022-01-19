@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" href="img/baseball.png">
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Yahtzee" asp-action="Index">Home</a>
+        <a asp-controller="Yahtzee" asp-action="Gradeform">Grade Calculator</a> <!--we need tag helpers here-->
+
+    </nav>
+
+    <div>
+        @RenderBody() <!-- indicates where the body goes for each individual page-->
+    </div>
+
+    <footer>This is my awesome footer</footer>
+
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
